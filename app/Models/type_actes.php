@@ -5,20 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class acte_deces extends Model
+class Type_acte extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'civilite',
-        'date',
-        'lieu',
-        'nom',
-        'prenom',
-        'date_naissance',
-
+       'code', 'libelle'
     ];
-
     protected $primaryKey = 'id';
-
+    protected $table = 'type_actes';
 }

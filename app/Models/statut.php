@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class statut extends Model
 {
     use HasFactory;
+
+    
+    protected $fillable = [
+        'code', 'libelle'
+    ];
+    protected $primaryKey = 'id';
+
 }
